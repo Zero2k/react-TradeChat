@@ -15,7 +15,7 @@ const Inputx = styled.div`
 export default ({ companyName }) => (
   <Root>
     <Inputx>
-      <Input fluid placeholder={`Message $${companyName}`} icon={{ name: 'smile', link: true }} />
+      <Input fluid placeholder={`Talk about $${companyName}`} icon={{ name: 'smile', link: true }} />
     </Inputx>
   </Root>
 );

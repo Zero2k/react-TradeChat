@@ -38,7 +38,7 @@ const SubHeader = styled.div`
 const trigger = (
   <span>
     <Image avatar src="https://react.semantic-ui.com/assets/images/avatar/small/molly.png" />
-    <span> Username</span>
+    <span> Stevie Feliciano</span>
   </span>
 );
 
@@ -62,7 +62,7 @@ export default ({ companyName }) => (
         style={{ textAlign: 'center', display: 'flex', justifyContent: 'space-evenly' }}
       >
         <Icon link name="at" size="large" />
-        <Icon link name="star" size="large" />
+        <Icon link name="empty star" size="large" />
         <Icon link name="ellipsis vertical" size="large" />
       </Box>
       <Box align="center">

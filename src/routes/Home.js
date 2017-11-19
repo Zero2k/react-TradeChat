@@ -21,17 +21,12 @@ class Home extends React.Component {
         <Companies companies={[{ id: 1, symbol: 'TGT' }, { id: 2, symbol: 'AAP' }]} />
         <Channels
           companyName="Apple"
-          username="Username"
+          username="Stevie Feliciano"
           channels={[{ id: 1, name: 'general' }, { id: 2, name: 'news' }]}
           users={[{ id: 1, name: 'Bob' }, { id: 2, name: 'Boba' }]}
         />
         <Header companyName="Apple" />
-        <Messages>
-          <ul className="message-list">
-            <li />
-            <li />
-          </ul>
-        </Messages>
+        <Messages />
         <MessageInput companyName="Apple" />
       </Root>
     );
