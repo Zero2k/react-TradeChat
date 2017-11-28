@@ -35,11 +35,11 @@ const CompanyItem = styled.li`
 
 const Company = ({ id, symbol }) => <CompanyItem key={`company-${id}`}>{symbol}</CompanyItem>;
 
-export default ({ companies }) => (
+export default ({ companies, onFindCompanyClick }) => (
   <Root>
     <CompanyList>{companies.map(Company)}</CompanyList>
     <CompanyList>
-      <CompanyItem>
+      <CompanyItem onClick={onFindCompanyClick} >
         <Icon style={{ margin: '0' }} name="search" />
       </CompanyItem>
     </CompanyList>

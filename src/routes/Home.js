@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Channels from '../components/Channels';
-import Companies from '../components/Companies';
+import Sidebar from '../containers/Sidebar';
+
 import Header from '../components/Header';
 import Messages from '../components/Messages';
 import MessageInput from '../components/MessageInput';
@@ -18,13 +18,7 @@ class Home extends React.Component {
   render() {
     return (
       <Root>
-        <Companies companies={[{ id: 1, symbol: 'TGT' }, { id: 2, symbol: 'AAP' }]} />
-        <Channels
-          companyName="Apple"
-          username="Stevie Feliciano"
-          channels={[{ id: 1, name: 'general' }, { id: 2, name: 'news' }]}
-          users={[{ id: 1, name: 'Bob' }, { id: 2, name: 'Boba' }]}
-        />
+        <Sidebar />
         <Header companyName="Apple" />
         <Messages />
         <MessageInput companyName="Apple" />
